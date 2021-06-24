@@ -1,0 +1,44 @@
+{
+    "runtime": {
+        "version": "stable"
+    },
+    "platform": {
+        "uuid": "Vantage",
+        "autoShow": false,
+        "defaultViewOptions": {
+            "preloadScripts": [
+                {
+
+                    "url": "http://localhost:9999/vantage-preload.js"
+                }
+            ]
+        }
+    },
+    "snapshot": {
+        "windows": [
+            {
+                "contextMenu": true,
+                "saveWindowState": false,
+                "backgroundThrottling": true,
+                "layout": {
+                    "content": [
+                        {
+                            "type": "row",
+                            "id": "no-drop-target",
+                            "content": [
+                                {
+                                    "type": "component",
+                                    "componentName": "view",
+                                    "componentState": {
+                                        "name": "VantageView",
+                                        "url": "http://localhost:9999/index.html"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

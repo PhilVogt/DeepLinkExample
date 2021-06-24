@@ -1,0 +1,40 @@
+{
+    "runtime": {
+        "version": "stable"
+    },
+    "platform": {
+        "uuid": "SalesForce",
+        "autoShow": false,
+        "preloadScripts": [
+            {
+                "url": "http://localhost:9999/salesforce-preload.js"
+            }
+        ]
+    },
+    "snapshot": {
+        "windows": [
+            {
+                "saveWindowState": false,
+                "backgroundThrottling": true,
+                "layout": {
+                    "content": [
+                        {
+                            "type": "row",
+                            "id": "no-drop-target",
+                            "content": [
+                                {
+                                    "type": "component",
+                                    "componentName": "view",
+                                    "componentState": {
+                                        "name": "SalesForceView",
+                                        "url": "http://openfin.co"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
