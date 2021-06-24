@@ -7,7 +7,7 @@ const initOpenFinParamListener = () => {
     // If app is already running parameters are passed through the “run-requested” event
     app.addListener("run-requested", function (event) {
         if (event.userAppConfigArgs) {
-            alert(event.userAppConfigArgs);
+            alert(`Update ${JSON.stringify(event.userAppConfigArgs)}`);
         }
     });
 };
