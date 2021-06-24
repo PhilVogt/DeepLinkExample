@@ -5,6 +5,7 @@ const initOpenFinParamListener = () => {
     fin.desktop.main(userAppConfigArgs => {
         if (currentClientId !== userAppConfigArgs.clientid) {
             currentClientId = userAppConfigArgs.clientid;
+            alert(currentClientId);
         }
     });
     let app = fin.Application.getCurrentSync();
