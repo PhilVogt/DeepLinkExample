@@ -8,6 +8,7 @@
         "defaultViewOptions": {
             "preloadScripts": [
                 {
+
                     "url": "http://localhost:9999/vantage-preload.js"
                 }
             ]
@@ -16,63 +17,22 @@
     "snapshot": {
         "windows": [
             {
-                "defaultWidth": 800,
-                "defaultHeight": 600,
-                "defaultLeft": 0,
-                "defaultTop": 0,
+                "contextMenu": true,
                 "saveWindowState": false,
                 "backgroundThrottling": true,
                 "layout": {
                     "content": [
                         {
                             "type": "row",
-                            "id": "mainRow",
-                            "isClosable": true,
-                            "reorderEnabled": true,
-                            "title": "",
+                            "id": "no-drop-target",
                             "content": [
                                 {
-                                    "type": "stack",
-                                    "width": 50,
-                                    "isClosable": true,
-                                    "reorderEnabled": true,
-                                    "title": "",
-                                    "activeItemIndex": 0,
-                                    "content": [
-                                        {
-                                            "type": "component",
-                                            "componentName": "view",
-                                            "componentState": {
-                                                "name": "VantageView",
-                                                "url": "http://localhost:9999/index.html"
-                                            },
-                                            "isClosable": true,
-                                            "reorderEnabled": true,
-                                            "title": "view"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type": "stack",
-                                    "width": 50,
-                                    "height": 100,
-                                    "isClosable": true,
-                                    "reorderEnabled": true,
-                                    "title": "",
-                                    "activeItemIndex": 0,
-                                    "content": [
-                                        {
-                                            "type": "component",
-                                            "componentName": "view",
-                                            "componentState": {
-                                                "name": "SalesForceView",
-                                                "url": "http://openfin.co"
-                                            },
-                                            "isClosable": true,
-                                            "reorderEnabled": true,
-                                            "title": "view"
-                                        }
-                                    ]
+                                    "type": "component",
+                                    "componentName": "view",
+                                    "componentState": {
+                                        "name": "VantageView",
+                                        "url": "http://localhost:9999/index.html"
+                                    }
                                 }
                             ]
                         }
