@@ -1,7 +1,6 @@
 const initOpenFinParamListener = () => {
 
     fin.desktop.main(userAppConfigArgs => {
-        debugger;
         alert(JSON.stringify(userAppConfigArgs));
     });
     let app = fin.Application.getCurrentSync();

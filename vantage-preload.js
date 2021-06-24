@@ -1,4 +1,4 @@
-alert("asdasdasdasdasdasd");
+
 function init() {
     debugger;
     const button = document.createElement("button");
@@ -11,6 +11,5 @@ function init() {
 }
 
 window.addEventListener("DOMContentLoaded", evt => {
-    alert("shitit");
     init();
 });
