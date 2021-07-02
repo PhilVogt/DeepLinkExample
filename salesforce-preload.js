@@ -1,6 +1,5 @@
 
 
-let accessToken;
 function initOpenFinParamListener() {
     let currentClientId;
     fin.desktop.main(userAppConfigArgs => {
@@ -21,7 +20,7 @@ function initOpenFinParamListener() {
                 const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${currentClientId}`, {
                     method: 'get',
                     headers: new Headers({
-                        'Authorization': 'Bearer ' + accessToken
+                        'Authorization': 'Bearer ' + event.userAppConfigArgs.accessToken
                     })
                 });
                 const json = await response.json();
