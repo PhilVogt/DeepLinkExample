@@ -2,7 +2,7 @@
     "devtools_port": 9090,
     "startup_app": {
         "name": "SalesForceView",
-        "url": "http://openfin.co",
+        "url": "https://resilient-bear-y3oqr-dev-ed.lightning.force.com/lightning/o/Contact/list?filterName=Recent",
         "uuid": "app-1624559832394-2187",
         "saveWindowState": true,
         "autoShow": true,
@@ -10,9 +10,19 @@
             {
                 "url": "http://localhost:9999/salesforce-preload.js"
             }
-        ]
+        ],
+        "experimental": {
+            "contentSecurityPolicies": {
+                "script-src": [
+                    "https://pokeapi.co"
+                ],
+                "connect-src": [
+                    "https://pokeapi.co"
+                ]
+            }
+        }
     },
     "runtime": {
-        "version": "stable"
+        "version": "17.85.54.10"
     }
 }
