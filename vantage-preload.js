@@ -19,7 +19,6 @@ async function initialiseAuth() {
         interval = window.setInterval(async () => {
             const currentUrl = (await sfOAuthWin.getInfo()).url;
             if (currentUrl.startsWith(redirectUri)) {
-                debugger;
                 window.clearInterval(interval);
                 const usp = new URLSearchParams(new URL(currentUrl).hash.substr(1));
                 const token = usp.get('access_token');
@@ -37,6 +36,7 @@ async function initialiseAuth() {
 }
 let accessToken;
 function init() {
+    debugger;
     const button = document.createElement("button");
     button.innerHTML = "Click me";
 
